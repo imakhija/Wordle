@@ -59,13 +59,14 @@
         }
         
         function crossOut(num) {
-            if(document.getElementById(num).style.textDecoration == "line-through") {
-                document.getElementById(num).style.textDecoration = "none";
-                document.getElementById(num).style.color = "black";
+            document.getElementById("num").style.transitionDuration = "2s";
+            if(document.getElementById("num").style.textDecoration == "line-through") {
+                document.getElementById("num").style.textDecoration = "none";
+                document.getElementById("num").style.color = "black";
             }
             else {
-                document.getElementById(num).style.textDecoration = "line-through";
-                document.getElementById(num).style.color = "red";
+                document.getElementById("num").style.textDecoration = "line-through";
+                document.getElementById("num").style.color = "red";
             }
         }
 

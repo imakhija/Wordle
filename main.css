@@ -163,7 +163,7 @@ div {
 .dropdown-menu {
     background-color:#0b2545!important;
     border:none;
-    margin-top:-10px;
+    margin-top:-12px;
 }
 
 .dropdown-item {
@@ -172,7 +172,7 @@ div {
     transition:0.25s;
     font-weight:bold;
     border-radius:10px;
-    margin-top:5px;
+    margin-top:10px;
 }
 
 .dropdown-item:hover {

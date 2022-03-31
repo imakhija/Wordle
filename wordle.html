@@ -37,7 +37,7 @@
                 if((e.keyCode > 96 && e.keyCode < 123) || (e.keyCode > 64 && e.keyCode < 91)) {
                     if(document.getElementById(currentWord + "-" + currentLetter).innerHTML == "") {
                         document.getElementById(currentWord + "-" + currentLetter).innerHTML = e.key.toUpperCase();
-                        document.getElementById(currentWord + "-" + currentLetter).style.borderColor = "#565758";
+                        document.getElementById(currentWord + "-" + currentLetter).style.borderColor = "#eef4ed";
                         currentEntry += e.key.toLowerCase();
                     }
                     if(currentLetter < 5) {
@@ -49,11 +49,11 @@
                     if(currentLetter > 1) {
                         if(currentLetter == 5 && document.getElementById(currentWord + "-" + 5).innerHTML != "") {
                         document.getElementById(currentWord + "-" + currentLetter).innerHTML = "";
-                        document.getElementById(currentWord + "-" + currentLetter).style.borderColor = "#3A3A55";
+                        document.getElementById(currentWord + "-" + currentLetter).style.borderColor = "#8da9c4";
                         }
                         else {
                             document.getElementById(currentWord + "-" + (currentLetter-1)).innerHTML = "";
-                            document.getElementById(currentWord + "-" + (currentLetter-1)).style.borderColor = "#3A3A55";
+                            document.getElementById(currentWord + "-" + (currentLetter-1)).style.borderColor = "#8da9c4";
                             if(currentLetter > 1) {
                                 currentLetter--;
                             }
@@ -90,7 +90,7 @@
         if(!won && currentWord < 7 && letter != "delete" && letter != "enter") {
             if(document.getElementById(currentWord + "-" + currentLetter).innerHTML == "") {
                 document.getElementById(currentWord + "-" + currentLetter).innerHTML = letter.toUpperCase();
-                document.getElementById(currentWord + "-" + currentLetter).style.borderColor = "#565758";
+                document.getElementById(currentWord + "-" + currentLetter).style.borderColor = "#eef4ed";
                 currentEntry += letter;
             }
             if(currentLetter < 5) {
@@ -102,11 +102,11 @@
             if(currentLetter > 1) {
                 if(currentLetter == 5 && document.getElementById(currentWord + "-" + 5).innerHTML != "") {
                 document.getElementById(currentWord + "-" + currentLetter).innerHTML = "";
-                document.getElementById(currentWord + "-" + currentLetter).style.borderColor = "#3A3A55";
+                document.getElementById(currentWord + "-" + currentLetter).style.borderColor = "#8da9c4";
                 }
                 else {
                     document.getElementById(currentWord + "-" + (currentLetter-1)).innerHTML = "";
-                    document.getElementById(currentWord + "-" + (currentLetter-1)).style.borderColor = "#3A3A55";
+                    document.getElementById(currentWord + "-" + (currentLetter-1)).style.borderColor = "#8da9c4";
                     if(currentLetter > 1) {
                         currentLetter--;
                     }
@@ -283,6 +283,12 @@
             </tr>
         </table>
     </div>
+    <a href="https://imakhija.me"><div style="position:fixed;bottom:0px;right:0px;background-color:#13315C;padding:10px;margin-right:10px;margin-bottom:10px;border-radius:25px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+          </svg>
+    </div></a>
 </body>
 </html>
 
@@ -300,16 +306,15 @@
     }
 
     #navbar {
-        background-color:#000;
-        border-bottom:1px solid #000;
+        background-color:#0b2545;
     }
 
     a {
-        color:#ffcc00!important;
+        color:#8da9c4!important;
     }
 
     body {
-        background-color:#000;
+        background-color:#0b2545;
     }
     
     table {
@@ -320,7 +325,7 @@
     td {
         width:60px;
         height:60px;
-        border:2px solid #3A3A55;
+        border:2px solid #8da9c4;
         color:#fff;
         text-align:center;
         font-weight:bold;
@@ -330,7 +335,7 @@
     .letters {
         width:40px;
         height:40px;
-        border:2px solid #3A3A55;
+        border:2px solid #8da9c4;
         color:#fff;
         text-align:center;
         font-weight:bold;
@@ -339,7 +344,7 @@
 
     p {
         font-weight:bold;
-        color:#ffcc00;
+        color:#8da9c4;
     }
 </style>
 

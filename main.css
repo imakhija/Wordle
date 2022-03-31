@@ -156,7 +156,7 @@ div {
     border:none!important;
 }
 
-.dropdown-toggle:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {
     display:block;
 }
 

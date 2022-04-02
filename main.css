@@ -196,3 +196,40 @@ div {
         width:90%;
     }
 }
+
+.side {
+    color:#8da9c4;
+    text-decoration:none;
+    transition:0.25s;
+    font-weight:bold;
+}
+
+.side:hover {
+    color:#eef4ed;
+}
+
+.side {
+    margin-top:10px;
+}
+
+.tab-pane {
+    color:#eef4ed;
+}
+
+h2 {
+    font-size:2vw;
+    color:#8da9c4;
+}
+
+h3 {
+    font-size:2vw;
+    color:#8da9c4;
+}
+
+.row {
+    min-width:300px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

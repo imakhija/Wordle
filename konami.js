@@ -25,5 +25,5 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateCheats() {
-  window.location.href = "https://www.google.com";
+  window.location.href = "https://imakhija.me/atcs22/easter.html";
 }

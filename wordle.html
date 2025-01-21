@@ -15,11 +15,11 @@
 <script>
     let won = false;
     // regular wordle
-    let random = Math.round(Math.random()*(words.length-1));
-    let wordOfTheDay = words[random];
+    // let random = Math.round(Math.random()*(words.length-1));
+    // let wordOfTheDay = words[random];
     // robotics wordle
-    // let random = Math.round(Math.random()*(answers.length-1));
-    // let wordOfTheDay = answers[random];
+    let random = Math.round(Math.random()*(answers.length-1));
+    let wordOfTheDay = answers[random];
     console.log(wordOfTheDay);
     let wordOfTheDayLetters = [];
     for(var i = 0; i < 5; i++) {
